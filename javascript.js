@@ -16,7 +16,7 @@ let clickingPower = 1;
         } addToScore(clickingPower)
     })
 
-    document.getElementById(`buy-cursor`).addEventListener(`click`, () => {
+    document.getElementById(`cursorImage`).addEventListener(`click`, () => {
         function buyCursor () {
             if (score >= cursorCost) {
                 score = score - cursorCost;
@@ -30,7 +30,7 @@ let clickingPower = 1;
             }
         } buyCursor();
 
-        document.getElementById(`buy-grandma`).addEventListener(`click`, () => {
+        document.getElementById(`grannyImage`).addEventListener(`click`, () => {
             function buyGrandma() {
                 if (score >= grandmaCost) {
                     score = score - grandmaCost;

@@ -36,4 +36,42 @@ h1 {
   transform: scale(0.99);
 }
 
+.shopButtons {
+  background-color: #b5b5b5;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.shopButtons:hover {
+  background-color: #c7c7c7;
+  transition: all 0.2s ease-in-out;
+}
+
+.shopButtons #cursorImage {
+  width: 25%;
+}
+
+.shopButtons img {
+  height: 64px;
+  width: 64px;
+}
+
+.shopButtons #nameAndCost p {
+  margin: 0px;
+  width: 60%;
+}
+
+.shopButtons #nameAndCost p:first-of-type {
+  font-size: 24px;
+}
+
+.shopButtons #amount {
+  font-size: 48px;
+  color: #595959;
+  font-family: roboto;
+  width: 15%;
+}
+
 /*# sourceMappingURL=styles.css.map */
