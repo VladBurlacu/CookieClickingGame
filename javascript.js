@@ -4,6 +4,8 @@ let cursors = 0;
 let grandmaCost = 100;
 let grandmas = 0;
 let clickingPower = 1;
+let ovenCost = 1000;
+let ovens = 0;
 
 (() => {
 
@@ -43,6 +45,22 @@ let clickingPower = 1;
                     updateCookiesPerSecond();
                 }
             } buyGrandma();
+
+        })
+
+        document.getElementById(`grannyImage`).addEventListener(`click`, () => {
+            function buyOven() {
+                if (score >= ovenCost) {
+                    score = score - grandmaCost;
+                    oven = ovens + 1;
+                    ovenCost = Math.round(ovenCost * 1.15);
+
+                    document.getElementById(`score`).innerHTML = score;
+                    document.getElementById("ovencost").innerHTML = grandmaCost;
+                    document.getElementById(`ovens`).innerHTML = grandmas;
+                    updateCookiesPerSecond();
+                }
+            } buyOven();
 
         })
 
