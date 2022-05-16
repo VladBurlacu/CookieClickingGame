@@ -8,7 +8,7 @@ let clickingPower = 1;
 (() => {
 
 
-    document.getElementById(`mainBtn`).addEventListener("click", () => {
+    document.getElementById(`cookieImage`).addEventListener("click", () => {
 
         function addToScore() {
             score += 1;
