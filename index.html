@@ -6,25 +6,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="true">
-    <link href="/stylesheet.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="javascript.js" defer></script>
+
 </head>
 <body>
-<div class="container">
+<div class="sectionLeft">
     <h1>SMASH THE COOKIE</h1>
     <span id="score">0</span> Cookies<br>
     <span id="cookiespersecond">0</span> Cookies per second
 
-
-    <label for="cookieImage" id="label">Click the cookie</label>
-    <div class="actions">
-        <button type="button" id="mainBtn">
-            <img id="cookieImage" src="Resources/cookieimg.jpg" alt="cookie image" style="height: 256px; width: 256px"/>
-        </button>
-        <button id="buy-cursor">Cursor [<span id="cursorcost">15</span>] -- <span id="cursors">0</span></button>
-        <button id="buy-grandma">Grandma [<span id="grandmacost">100</span>] -- <span id="grandmas">0</span></button>
-    </div>
-
+    <button type="button" id="mainBtn">
+        <img id="cookieImage" src="Resources/cookieimg.jpg" alt="cookie image" style="height: 256px; width: 256px"/>
+    </button>
+</div>
+<div class="sectionRight">
+    <button id="buy-cursor">Cursor [<span id="cursorcost">15</span>] -- <span id="cursors">0</span></button>
+    <button id="buy-grandma">Grandma [<span id="grandmacost">100</span>] -- <span id="grandmas">0</span></button>
 </div>
 
 </body>
