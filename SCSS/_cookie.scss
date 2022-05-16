@@ -1,6 +1,19 @@
 .sectionLeft {
   float: left;
+  width: 80%;
 }
 .sectionRight {
   float: right;
+  width: 20%;
+}
+
+.scoreContainer {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
 }
