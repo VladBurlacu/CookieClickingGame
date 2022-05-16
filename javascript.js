@@ -27,6 +27,11 @@ let cursors = 0;
                 document.getElementById(`cursors`).innerHTML = cursors;
             }
         } buyCursor()
+
+        setInterval(function () {
+            score = score + cursors;
+            document.getElementById(`score`).innerHTML = score;
+            }, 1000) // 1000 ms = 1 second
     })
 
 
