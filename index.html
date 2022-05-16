@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="true">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href="/stylesheet.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
-
 <div class="container">
     <h1>SMASH THE COOKIE</h1>
-    <button id="click" type="button" class="btn btn-primary btn-lg btn-block"><img src="Resources/cookiepic.png" alt="cookieclicker" class="cookieImage"></button>
+    <p>Score: <span id="score">0</span></p>
+
+    <label for="cookieImage" id="label">Click the cookie</label>
+    <div class="actions">
+        <button type="button" id="mainBtn">
+            <img id="cookieImage" src="Resources/cookieimg.jpg" alt="cookie image" style="height: 256px; width: 256px"/>
+        </button>
+        <button id="buy-cursor">Cursor [<span id="cursorcost">15</span>] -- <span id="cursors">0</span></button>
+    </div>
+
 </div>
 
 </body>
