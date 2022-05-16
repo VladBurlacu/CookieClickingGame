@@ -52,7 +52,7 @@ let ovens = 0;
             function buyOven() {
                 if (score >= ovenCost) {
                     score = score - grandmaCost;
-                    oven = ovens + 1;
+                    ovens = ovens + 1;
                     ovenCost = Math.round(ovenCost * 1.15);
 
                     document.getElementById(`score`).innerHTML = score;
