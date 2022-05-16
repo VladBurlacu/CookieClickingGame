@@ -48,7 +48,7 @@ let ovens = 0;
 
         })
 
-        document.getElementById(`grannyImage`).addEventListener(`click`, () => {
+        document.getElementById(`ovenImg`).addEventListener(`click`, () => {
             function buyOven() {
                 if (score >= ovenCost) {
                     score = score - grandmaCost;
@@ -56,7 +56,7 @@ let ovens = 0;
                     ovenCost = Math.round(ovenCost * 1.15);
 
                     document.getElementById(`score`).innerHTML = score;
-                    document.getElementById("ovencost").innerHTML = grandmaCost;
+                    document.getElementById("ovencost").innerHTML = ovenCost;
                     document.getElementById(`ovens`).innerHTML = grandmas;
                     updateCookiesPerSecond();
                 }
@@ -65,13 +65,14 @@ let ovens = 0;
         })
 
         function updateCookiesPerSecond() {
-            cookiesPerSecond = cursors + grandmas *5;
+            cookiesPerSecond = cursors + grandmas *5 + ovens * 70;
             document.getElementById(`cookiespersecond`).innerHTML = cookiesPerSecond;
         }
 
         setInterval(function () {
             score = score + cursors;
             score = score + grandmas * 5;
+            score = score + ovens * 70;
             document.getElementById(`score`).innerHTML = score;
 
             document.title = score + "cookies - Cookie Clicker";
