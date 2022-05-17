@@ -57,7 +57,7 @@ let ovens = 0;
 
                     document.getElementById(`score`).innerHTML = score;
                     document.getElementById("ovencost").innerHTML = ovenCost;
-                    document.getElementById(`ovens`).innerHTML = grandmas;
+                    document.getElementById(`ovens`).innerHTML = ovens;
                     updateCookiesPerSecond();
                 }
             } buyOven();
