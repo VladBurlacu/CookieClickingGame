@@ -7,8 +7,8 @@ let clickingPower = 1;
 let ovenCost = 1000;
 let ovens = 0;
 
-(() => {
 
+(() => {
 
     document.getElementById(`cookieImage`).addEventListener("click", () => {
 
@@ -129,6 +129,4 @@ let ovens = 0;
         }, 1000) // 1000 ms = 1 second
 
     })
-
-
 })();
