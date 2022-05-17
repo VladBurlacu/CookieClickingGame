@@ -110,6 +110,13 @@ let ovens = 0;
         window.unload = function () {
             loadGame();
             updateCookiesPerSecond();
+            document.getElementById(`score`).innerHTML = score;
+            document.getElementById("cursorcost").innerHTML = cursorCost;
+            document.getElementById(`cursors`).innerHTML = cursors;
+            document.getElementById(`grandmacost`).innerHTML = grandmaCost;
+            document.getElementById("grandmas").innerHTML = grandmas;
+            document.getElementById(`ovencost`).innerHTML = ovenCost;
+            document.getElementById(`ovens`).innerHTML = ovens;
         }
 
         setInterval(function () {
