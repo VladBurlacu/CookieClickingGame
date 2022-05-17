@@ -18,7 +18,7 @@ let ovens = 0;
         } addToScore(clickingPower)
     })
 
-    document.getElementById(`cursorImage`).addEventListener(`click`, () => {
+    document.getElementById(`cursorShop`).addEventListener(`click`, () => {
         function buyCursor () {
             if (score >= cursorCost) {
                 score = score - cursorCost;
@@ -32,7 +32,7 @@ let ovens = 0;
             }
         } buyCursor();
 
-        document.getElementById(`grannyImage`).addEventListener(`click`, () => {
+        document.getElementById(`grannyShop`).addEventListener(`click`, () => {
             function buyGrandma() {
                 if (score >= grandmaCost) {
                     score = score - grandmaCost;
@@ -48,7 +48,7 @@ let ovens = 0;
 
         })
 
-        document.getElementById(`ovenImg`).addEventListener(`click`, () => {
+        document.getElementById(`ovenShop`).addEventListener(`click`, () => {
             function buyOven() {
                 if (score >= ovenCost) {
                     score = score - grandmaCost;
