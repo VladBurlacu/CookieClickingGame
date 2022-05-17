@@ -1,14 +1,23 @@
 .sectionLeft {
   float: left;
   width: 80%;
+  padding-top: 6%;
 }
 .sectionRight {
   float: right;
   width: 20%;
+  padding-top: 6%;
+}
+
+body {
+  background-image: url("/Resources/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .scoreContainer {
   background-color: rgb(238, 238, 238);
+  opacity: 70%;
   margin: auto;
   width: 50%;
   border: 3px solid #73AD21;
@@ -18,13 +27,15 @@
   font-weight: bold;
 }
 
+
 h1 {
   text-align: center;
 }
 
 .clickerContainer img {
-  position: relative;
+  position: absolute;
   transition: all .2s ease-in-out;
+  padding-left: 15%;
 }
 
 .clickerContainer img:hover { transform: scale(1.10);}
