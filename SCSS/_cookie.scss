@@ -33,9 +33,8 @@ h1 {
 }
 
 .clickerContainer img {
-  position: absolute;
+  position: relative;
   transition: all .2s ease-in-out;
-  padding-left: 15%;
 }
 
 .clickerContainer img:hover { transform: scale(1.10);}
