@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url("/Resources/bckgrndimg.png");
+  background-image: url("../Resources/bckgrndimg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
