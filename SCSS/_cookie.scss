@@ -1,12 +1,12 @@
 .sectionLeft {
   float: left;
   width: 80%;
-  padding-top: 6%;
+  padding-top: 3%;
 }
 .sectionRight {
   float: right;
   width: 20%;
-  padding-top: 6%;
+  padding-top: 3%;
 }
 
 body {
@@ -27,8 +27,12 @@ body {
   font-weight: bold;
 }
 
-
 h1 {
+  text-align: center;
+  font-size: 46px;
+}
+
+h2 {
   text-align: center;
 }
 
@@ -43,4 +47,29 @@ h1 {
 
 .sectionFooter {
   margin-top: 20%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 46px;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
 }
